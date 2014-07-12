@@ -1,0 +1,62 @@
+body {
+	margin: 50px auto;
+	text-align: center;
+	font-family: helvetica, sans-serif;
+}
+
+h1 {
+	font-family: 'Londrina Shadow', cursive;
+	font-size: 50px;
+	letter-spacing: 2px;
+	color: #474545;
+}
+
+.container {
+	margin: 50px auto;
+	text-align: center;
+	width: 370px;
+	height: 370px;
+}
+
+.box {
+	float: left;
+	width: 120px;
+	height: 120px;
+	font-size: 90px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+#one, #two, #four, #five, #seven, #eight {
+	border-right: 2px dashed #474545;
+}
+
+#four, #five, #six, #seven, #eight, #nine {
+	border-top: 2px dashed #474545;
+}
+
+#clear_button {
+	margin: 0 auto;
+	margin-top: 40px;
+	background: #EB1C74;
+	color: #FFFFFF;
+	width: 110px;
+	border-radius: 30px;
+	font-family: 'Londrina Shadow', cursive;
+	font-size: 30px;
+	letter-spacing: 4px;
+}
+
+#clear_button p {
+	padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
