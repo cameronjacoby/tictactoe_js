@@ -4,37 +4,55 @@
 	<title>Tic Tac Toe</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href='http://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" href="favicon.png" />
 	<script type="text/javascript" src="script.js"></script>
 </head>
 <body>
-	<div class="header">
-		<h1>Tic Tac Toe</h1>
-	</div>
+	
 
-	<div class="container">
+	<table>
+		<td>
+			<p>Welcome to Tic Tac Toe! First, choose which version of the game you would like to play:</p>
+			<div class="button" id="single_player">
+				<p>Single Player</p>
+			</div>
+			<div class="button" id="two_player">
+				<p>Two Player</p>
+			</div>
+		</td>
+		<td>
+      <div id="header">
+        <h1>Tic Tac Toe</h1>
+      </div>
 
-		<div class="row">
-			<div class="box" id="one"></div>
-			<div class="box" id="two"></div>
-			<div class="box" id="three"></div>
-		</div>
+			<div id="container">
+				<div class="row">
+					<div class="box" id="one"></div>
+					<div class="box" id="two"></div>
+					<div class="box" id="three"></div>
+				</div>
 
-		<div class="row">
-			<div class="box" id="four"></div>
-			<div class="box" id="five"></div>
-			<div class="box" id="six"></div>
-		</div>
+				<div class="row">
+					<div class="box" id="four"></div>
+					<div class="box" id="five"></div>
+					<div class="box" id="six"></div>
+				</div>
 
-		<div class="row">	
-			<div class="box" id="seven"></div>
-			<div class="box" id="eight"></div>
-			<div class="box" id="nine"></div>
-		</div>
+				<div class="row">	
+					<div class="box" id="seven"></div>
+					<div class="box" id="eight"></div>
+					<div class="box" id="nine"></div>
+				</div>
+			</div>
 
-	</div>
+      <div class="button" id="reset_button">
+        <p>Reset</p>
+      </div>
 
-	<div id="clear_button">
-		<p>Clear</p>
-	</div>
+		</td>
+
+		<td id="turn"></td>
+    
+	</table>
 </body>
 </html>

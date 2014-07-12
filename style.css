@@ -1,19 +1,44 @@
 body {
-	margin: 50px auto;
 	text-align: center;
 	font-family: helvetica, sans-serif;
+	cursor: default;
+}
+
+table {
+	margin: 50px auto;
+}
+
+#header {
+  margin-top: -30px;
+  margin-bottom: 60px;
 }
 
 h1 {
-	font-family: 'Londrina Shadow', cursive;
-	font-size: 50px;
-	letter-spacing: 2px;
-	color: #474545;
+  font-family: 'Londrina Shadow', cursive;
+  font-size: 50px;
+  letter-spacing: 2px;
+  color: #474545;
 }
 
-.container {
-	margin: 50px auto;
-	text-align: center;
+td {
+  box-sizing: border-box;
+  width: 370px;
+  padding-right: 30px;
+}
+
+td p {
+  font-family: 'Londrina Shadow', cursive;
+  font-size: 28px;
+  letter-spacing: 2px;
+  color: #474545;
+}
+
+#single_player p, #two_player p {
+  font-size: 22px;
+  padding: 7px;
+}
+
+#container {
 	width: 370px;
 	height: 370px;
 }
@@ -35,28 +60,29 @@ h1 {
 	border-top: 2px dashed #474545;
 }
 
-#clear_button {
-	margin: 0 auto;
-	margin-top: 40px;
+.button {
+  box-sizing: border-box;
+	margin: 40px auto;
 	background: #EB1C74;
-	color: #FFFFFF;
 	width: 110px;
 	border-radius: 30px;
-	font-family: 'Londrina Shadow', cursive;
 	font-size: 30px;
 	letter-spacing: 4px;
+	cursor: pointer;
 }
 
-#clear_button p {
+.button p {
 	padding: 5px;
+  color: #FFFFFF;
 }
 
-
-
-
-
-
-
+#turn {
+  padding-bottom: 280px;
+  font-family: 'Londrina Shadow', cursive;
+  font-size: 28px;
+  letter-spacing: 2px;
+  color: #474545;
+}
 
 
 
