@@ -264,13 +264,40 @@ window.onload = function() {
 
             if (count === 9 && checkFunction("X") === false && checkFunction("O") === false) {
               gameState.innerHTML = "There is no winner! Click the reset button or anywhere on the board to start a new game.";
+              return;
             }
           }
 
           setTimeout(function() {
+
             if (checkFunction("X") === true || checkFunction("O") === true) {
               return;
             }
+
+            else if (boxOne.innerHTML === "X" && boxTwo.innerHTML === "X" && boxThree.innerHTML === "") {boxThree.style.color = '#94D60A'; boxThree.innerHTML = "O";}
+            else if (boxOne.innerHTML === "X" && boxThree.innerHTML === "X" && boxTwo.innerHTML === "") {boxTwo.style.color = '#94D60A'; boxTwo.innerHTML = "O";}
+            else if (boxTwo.innerHTML === "X" && boxThree.innerHTML === "X" && boxOne.innerHTML === "") {boxOne.style.color = '#94D60A'; boxOne.innerHTML = "O";}
+            else if (boxFour.innerHTML === "X" && boxFive.innerHTML === "X" && boxSix.innerHTML === "") {boxSix.style.color = '#94D60A'; boxSix.innerHTML = "O";}
+            else if (boxFour.innerHTML === "X" && boxSix.innerHTML === "X" && boxFive.innerHTML === "") {boxFive.style.color = '#94D60A'; boxFive.innerHTML = "O";}
+            else if (boxFive.innerHTML === "X" && boxSix.innerHTML === "X" && boxFour.innerHTML === "") {boxFour.style.color = '#94D60A'; boxFour.innerHTML = "O";}
+            else if (boxSeven.innerHTML === "X" && boxEight.innerHTML === "X" && boxNine.innerHTML === "") {boxNine.style.color = '#94D60A'; boxNine.innerHTML = "O";}
+            else if (boxSeven.innerHTML === "X" && boxNine.innerHTML === "X" && boxEight.innerHTML === "") {boxEight.style.color = '#94D60A'; boxEight.innerHTML = "O";}
+            else if (boxEight.innerHTML === "X" && boxNine.innerHTML === "X" && boxSeven.innerHTML === "") {boxSeven.style.color = '#94D60A'; boxSeven.innerHTML = "O";}
+            else if (boxOne.innerHTML === "X" && boxFour.innerHTML === "X" && boxSeven.innerHTML === "") {boxSeven.style.color = '#94D60A'; boxSeven.innerHTML = "O";}
+            else if (boxOne.innerHTML === "X" && boxSeven.innerHTML === "X" && boxFour.innerHTML === "") {boxFour.style.color = '#94D60A'; boxFour.innerHTML = "O";}
+            else if (boxFour.innerHTML === "X" && boxSeven.innerHTML === "X" && boxOne.innerHTML === "") {boxOne.style.color = '#94D60A'; boxOne.innerHTML = "O";}
+            else if (boxTwo.innerHTML === "X" && boxFive.innerHTML === "X" && boxEight.innerHTML === "") {boxEight.style.color = '#94D60A'; boxEight.innerHTML = "O";}
+            else if (boxTwo.innerHTML === "X" && boxEight.innerHTML === "X" && boxFive.innerHTML === "") {boxFive.style.color = '#94D60A'; boxFive.innerHTML = "O";}
+            else if (boxFive.innerHTML === "X" && boxEight.innerHTML === "X" && boxTwo.innerHTML === "") {boxTwo.style.color = '#94D60A'; boxTwo.innerHTML = "O";}
+            else if (boxThree.innerHTML === "X" && boxSix.innerHTML === "X" && boxNine.innerHTML === "") {boxNine.style.color = '#94D60A'; boxNine.innerHTML = "O";}
+            else if (boxThree.innerHTML === "X" && boxNine.innerHTML === "X" && boxSix.innerHTML === "") {boxSix.style.color = '#94D60A'; boxSix.innerHTML = "O";}
+            else if (boxSix.innerHTML === "X" && boxNine.innerHTML === "X" && boxThree.innerHTML === "") {boxThree.style.color = '#94D60A'; boxThree.innerHTML = "O";}
+            else if (boxOne.innerHTML === "X" && boxFive.innerHTML === "X" && boxNine.innerHTML === "") {boxNine.style.color = '#94D60A'; boxNine.innerHTML = "O";}
+            else if (boxOne.innerHTML === "X" && boxNine.innerHTML === "X" && boxFive.innerHTML === "") {boxFive.style.color = '#94D60A'; boxFive.innerHTML = "O";}
+            else if (boxFive.innerHTML === "X" && boxNine.innerHTML === "X" && boxOne.innerHTML === "") {boxOne.style.color = '#94D60A'; boxOne.innerHTML = "O";}
+            else if (boxThree.innerHTML === "X" && boxFive.innerHTML === "X" && boxSeven.innerHTML === "") {boxSeven.style.color = '#94D60A'; boxSeven.innerHTML = "O";}
+            else if (boxThree.innerHTML === "X" && boxSeven.innerHTML === "X" && boxFive.innerHTML === "") {boxFive.style.color = '#94D60A'; boxFive.innerHTML = "O";}
+            else if (boxFive.innerHTML === "X" && boxSeven.innerHTML === "X" && boxThree.innerHTML === "") {boxThree.style.color = '#94D60A'; boxThree.innerHTML = "O";}
 
             else if (boxOne.innerHTML === "") {
               boxOne.style.color = '#94D60A';
@@ -403,13 +430,3 @@ window.onload = function() {
   }
 
 }
-
-
-
-
-
-
-
-
-
-
