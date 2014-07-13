@@ -76,8 +76,8 @@ td p {
   color: #FFFFFF;
 }
 
-#turn {
-  padding-bottom: 280px;
+#game_state {
+  padding-bottom: 220px;
   font-family: 'Londrina Shadow', cursive;
   font-size: 28px;
   letter-spacing: 2px;
